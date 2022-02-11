@@ -6,7 +6,7 @@ import data from "../../stores/librarys/data";
 import * as ST from "./styles";
 
 const Home = () => {
-  // const stateData = useSelector((s) => s?.Librarys);
+  const stateData = useSelector((s) => s?.Librarys);
 
   return (
     <ST.Container>

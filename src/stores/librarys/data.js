@@ -1,6 +1,6 @@
 const data = [
   {
-    label: "INPUTTEXT",
+    label: "INPUT TEXT",
     description: "Descrição",
     name: "INPUTTEXT",
   },
