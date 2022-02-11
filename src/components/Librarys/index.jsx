@@ -1,15 +1,14 @@
 import { memo } from "react";
-import { useSelector } from "react-redux";
 
 import * as ST from "./styles";
 
-const Librarys = () => {
+const Librarys = ({ label, description }) => {
   return (
     <ST.Container>
       <ST.Column50>
         <ST.ContentInfo>
-          <ST.Name>Name</ST.Name>
-          <ST.Description>Descrição</ST.Description>
+          <ST.Name>{label}</ST.Name>
+          <ST.Description>{description}</ST.Description>
           <ST.ViewMore>Ler Mais</ST.ViewMore>
         </ST.ContentInfo>
       </ST.Column50>

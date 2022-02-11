@@ -1,10 +1,9 @@
-const data = 
-    [
-        {
-            Label:'INPUTTEXT',
-            Description: 'descrição',
-            Name:'INPUTTEXT',
-        },
-    ],
+const data = [
+  {
+    label: "INPUTTEXT",
+    description: "Descrição",
+    name: "INPUTTEXT",
+  },
+];
 
-export default data
+export default data;
