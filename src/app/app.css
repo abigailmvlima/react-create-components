@@ -1,10 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.9530553165398514) 37%, rgba(0,212,255,1) 100%);
+  background: rgb(0,4,61);
+  background: linear-gradient(180deg, rgba(0,4,61,1) 0%, rgba(0,10,157,1) 35%, rgba(15,30,255,1) 100%);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 

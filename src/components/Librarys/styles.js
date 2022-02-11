@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  border-bottom: 1px solid #000;
 `;
 
 export const Column50 = styled.div`
@@ -16,7 +17,7 @@ export const Column50 = styled.div`
 export const ContentInfo = styled.div`
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #07075e; ;
+  margin-top: 5px;
 `;
 
 export const Name = styled.div`

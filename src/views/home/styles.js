@@ -27,11 +27,11 @@ export const TituloSec = styled.div`
 
 export const Form = styled.div`
   display: flex;
+  flex-direction: column;
   background-color: #b6cef4;
   color: #09054d;
   font-size: 16px;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 30px;
   padding: 5px 10px;
 `;
