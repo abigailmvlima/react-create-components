@@ -1,13 +1,14 @@
 import { memo } from "react";
-import Librarys from "../../components/Librarys";
 import { useSelector } from "react-redux";
-import data from "../../stores/librarys/data";
+
+import Librarys from "../../components/librarys";
+import InputText from "../../components/inputText";
 
 import * as ST from "./styles";
 
 const Home = () => {
-  const stateData = useSelector((s) => s?.Librarys);
-
+  const stateData = useSelector((s) => s?.LIBRARYS);
+  console.log(stateData);
   return (
     <ST.Container>
       <ST.ContentTitulo>
@@ -15,7 +16,7 @@ const Home = () => {
         <ST.TituloSec>Lista de Componentes</ST.TituloSec>
       </ST.ContentTitulo>
       <ST.Form>
-        {data.map((row, key) => {
+        {stateData?.data.map((row, key) => {
           return (
             <Librarys
               key={key}
@@ -24,6 +25,7 @@ const Home = () => {
             />
           );
         })}
+        <InputText label={"label"} />
       </ST.Form>
     </ST.Container>
   );

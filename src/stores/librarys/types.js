@@ -1,4 +1,4 @@
-import librarys from "./data";
+import data from "./data";
 
 const name = "LIBRARYS";
 
@@ -10,7 +10,7 @@ const states = {
     loading: false,
     loaded: true,
     error: false,
-    data: librarys,
+    data,
   },
 };
 
