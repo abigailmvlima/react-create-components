@@ -2,7 +2,7 @@ const data = [
   {
     label: "INPUT TEXT",
     description: "Descrição",
-    name: "INPUTTEXT",
+    name: "inputText",
   },
   {
     label: "TEXT",

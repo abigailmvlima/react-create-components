@@ -1,7 +1,5 @@
 import navigate from "./navigate/actions";
-import assessmentProcess from "./assessmentProcess/actions";
-
-export default {
+const exportData = {
   navigate,
-  assessmentProcess,
 };
+export default exportData;

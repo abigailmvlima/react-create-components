@@ -2,13 +2,11 @@ import { memo } from "react";
 import { useSelector } from "react-redux";
 
 import Librarys from "../../components/librarys";
-import InputText from "../../components/inputText";
 
 import * as ST from "./styles";
 
 const Home = () => {
   const stateData = useSelector((s) => s?.LIBRARYS);
-  console.log(stateData);
   return (
     <ST.Container>
       <ST.ContentTitulo>
@@ -22,10 +20,10 @@ const Home = () => {
               key={key}
               label={row.label}
               description={row.description}
+              name={row.name}
             />
           );
         })}
-        <InputText label={"label"} />
       </ST.Form>
     </ST.Container>
   );
