@@ -1,70 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sobre a aplicação
+	Este projeto foi destinado ao aprendizado do Redux, Reducer, Store, Persistor, Styled-components, Sagas, Dispacth de ações, inclusão de imagens e manipulação de css.
 
-## Available Scripts
+# Tipos de Dados
+    - string  = 'nome'
+    - number  = 1234
+    - boolean = true ou false
+    - date    = new Date()
+    - array   = []      // exemplo de lista - um array ele é composto por um conjunto de dados seja um objeto que é um {} ou uma classe ou um numero ou uma '' ou um valor booleano que é true ou false
 
-In the project directory, you can run:
+    [6,35,42] - array de numero
+    [{title:'Davi'}, {title: 'Elio'}, {title: 'Bi'}] - array de objeto
 
-### `npm start`
+    https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Tipos de funções
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - Arrow Function
 
-### `npm run build`
+        const nomedafuncao = (params) => {
+            return valorderetorno
+        }
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    
+    - Function generator
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        function* nomedafuncao(params) {
+            return valordafuncao
+        }
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# pega valor do estado global, tras todos os reducers 
+    
+    const state = yield store.getState() 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Este comando serve para previnir caso haja algum tipo de erro ele executa a parte do catch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    try {
+        ...conteudo do codigo
+	} catch (error) {
+        console.log(error)
+    }
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Reducer
+    É o estado da aplicação, onde é possivel guardar os dados e manipulalos podendo ser acessivel de qualquer lugar da aplicação ou sistema.
+    Os dados podem ser recuperados atraves do hook chamado userSelector() que faz parte do pacote importado react-redux.
 
-## Learn More
+# Sagas
+    É conhecido como redux, que tem como funcionalidade o gatilho por monitoramento de chaves para executar tarefas em segundo plano. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Sobre o import
+    quando for importar um arquivo local em .js e o mesmo não conter o export default e conter apenas export const no meio do codigo.
+    realizar a importação utilizando o * as exemplo: import * as nomeDeUtilizacao from 'enderecoDoArquivo'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Lógica de programação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    - if ou ternario
 
-### Analyzing the Bundle Size
+    const entradaDados = 6
+    const idade = 6
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    // condição padrão
+    if (entradaDados == idade) {
+        fazAlgo .....
+        return retornaAlgo1
+    } else {
+        fazAlgo .....
+        return retornaAlgo2
+    }
 
-### Making a Progressive Web App
+    // condição ternaria
+    return entradaDados == idade ? retornaAlgo1 : retornaAlgo2
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    para verificar se o conteudo de uma variavel é null ou vazio
+        utilizar o simbolo de !
+        
+        1- if (!nomeDaVariavel)        
+        2- !nomeDaVariavel ? ...: ...
+	
+	
+	
+	
