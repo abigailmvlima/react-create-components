@@ -22,7 +22,6 @@ const reducerState = (state = types.states.initial, action) => {
       const data = JSON.parse(
         JSON.stringify({ ...state?.data, ...(action.data ? action.data : {}) })
       );
-
       return {
         ...state,
         data,

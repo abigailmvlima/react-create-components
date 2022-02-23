@@ -37,6 +37,7 @@ export const ViewMore = styled.div`
   font-size: 10px;
   justify-content: flex-end;
   padding-right: 10px;
+  cursor: pointer;
 `;
 
 export const ContentImg = styled.div`
