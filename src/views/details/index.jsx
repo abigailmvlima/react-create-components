@@ -44,8 +44,8 @@ const Details = () => {
               value: 2,
             },
             {
-              label: "valor 4",
-              value: 4,
+              label: "valor 3",
+              value: 3,
             },
           ]}
         />
