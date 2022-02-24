@@ -1,4 +1,4 @@
-import { memo, useState, useEffect, useLayoutEffect } from "react";
+import { memo, useState, useEffect } from "react";
 
 import * as ST from "./styles";
 
@@ -17,10 +17,27 @@ const InputNumber = ({ label, value, onChange }) => {
     onChange && onChange(temp);
   };
 
+  const onKeyPress = (e) => {
+    var theEvent = e || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    //var regex = /^[0-9.,]+$/;
+    var regex = /^[0-9.]+$/;
+    if (!regex.test(key)) {
+      theEvent.returnValue = false;
+      if (theEvent.preventDefault) theEvent.preventDefault();
+    }
+  };
+
   return (
     <ST.Container>
       <ST.Label>{label}</ST.Label>
-      <ST.Input value={dataValue} onChange={_onChange} />
+      <ST.Input
+        type={"number"}
+        value={dataValue}
+        onChange={_onChange}
+        onKeyPress={onKeyPress}
+      />
     </ST.Container>
   );
 };

@@ -2,57 +2,57 @@ const data = [
   {
     label: "INPUT TEXT",
     description: "Descrição",
-    name: "inputText",
+    name: "InputText",
   },
   {
     label: "INPUT NUMERICO",
     description: "Utilizado para usuario digitar campos de números",
-    name: "inputNumber",
+    name: "InputNumber",
   },
   {
     label: "SELECT",
     description: "Seleciona Dados",
-    name: "select",
+    name: "Select",
   },
   {
     label: "CHECKBOX",
     description: "Descrição CheckBox",
-    name: "checkBox",
+    name: "CheckBox",
   },
   {
     label: "INPUTDATE",
     description: "Descrição InputDate",
-    name: "inputDate",
+    name: "InputDate",
   },
   {
     label: "BOX",
     description: "Descrição box",
-    name: "box",
+    name: "Box",
   },
   {
     label: "LABEL",
     description: "Descrição Label",
-    name: "label",
+    name: "Label",
   },
   {
     label: "INPUTCORRENCY",
     description: "Descrição InputCorrency",
-    name: "inputCorrency",
+    name: "InputCorrency",
   },
   {
     label: "ROW",
     description: "Descrição Row",
-    name: "row",
+    name: "Row",
   },
   {
     label: "COLUMN",
     description: "Descrição Column",
-    name: "column",
+    name: "Column",
   },
   {
     label: "CONTAINER",
     description: "Descrição Container",
-    name: "container",
+    name: "Container",
   },
 ];
 

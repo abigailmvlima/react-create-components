@@ -1,29 +1,29 @@
-import librarys from "./librarys";
-import inputText from "./inputText";
-import inputNumber from "./inuptNumber";
-import select from "./select";
-import checkBox from "./checkBox";
-import inputDate from "./inputDate";
-import box from "./box";
-import label from "./label";
-import inputCorrency from "./inputCorrency";
-import row from "./row";
-import column from "./column";
-import container from "./container";
+import Librarys from "./librarys";
+import InputText from "./inputText";
+import InputNumber from "./inuptNumber";
+import Select from "./select";
+import CheckBox from "./checkBox";
+import InputDate from "./inputDate";
+import Box from "./box";
+import Label from "./label";
+import InputCorrency from "./inputCorrency";
+import Row from "./row";
+import Column from "./column";
+import Container from "./container";
 
 const exportData = {
-  librarys,
-  inputText,
-  inputNumber,
-  select,
-  checkBox,
-  inputDate,
-  box,
-  label,
-  inputCorrency,
-  row,
-  column,
-  container,
+  Librarys,
+  InputText,
+  InputNumber,
+  Select,
+  CheckBox,
+  InputDate,
+  Box,
+  Label,
+  InputCorrency,
+  Row,
+  Column,
+  Container,
 };
 
 export default exportData;
