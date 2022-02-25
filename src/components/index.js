@@ -1,12 +1,12 @@
 import Librarys from "./librarys";
 import InputText from "./inputText";
-import InputNumber from "./inuptNumber";
+import InputNumber from "./inputNumber";
 import Select from "./select";
 import CheckBox from "./checkBox";
 import InputDate from "./inputDate";
 import Box from "./box";
 import Label from "./label";
-import InputCorrency from "./inputCorrency";
+import InputCurrency from "./inputCurrency";
 import Row from "./row";
 import Column from "./column";
 import Container from "./container";
@@ -20,7 +20,7 @@ const exportData = {
   InputDate,
   Box,
   Label,
-  InputCorrency,
+  InputCurrency,
   Row,
   Column,
   Container,

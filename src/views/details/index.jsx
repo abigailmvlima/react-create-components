@@ -10,7 +10,7 @@ const Details = () => {
   const getComp = () => {
     const Component = comp[dataState.name];
     if (!Component) return <div>Componente não encontrado</div>;
-    return <Component />;
+    return <Component {...dataState} />;
   };
   const onClick = () => {
     actions.navigate.show("/");
@@ -30,25 +30,7 @@ const Details = () => {
         <ST.NameComponent>
           Nome do Componente: {dataState.name}
         </ST.NameComponent>
-        {/* <ST.Componet>{getComp()}</ST.Componet> */}
-
-        <comp.Select
-          value={1}
-          data={[
-            {
-              label: "valor 1",
-              value: 1,
-            },
-            {
-              label: "valor 2",
-              value: 2,
-            },
-            {
-              label: "valor 3",
-              value: 3,
-            },
-          ]}
-        />
+        <ST.Componet>{getComp()}</ST.Componet>
       </ST.Form>
     </ST.Container>
   );

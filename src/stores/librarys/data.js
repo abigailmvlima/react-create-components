@@ -35,9 +35,9 @@ const data = [
     name: "Label",
   },
   {
-    label: "INPUTCORRENCY",
-    description: "Descrição InputCorrency",
-    name: "InputCorrency",
+    label: "INPUTCURRENCY",
+    description: "Descrição InputCurrency",
+    name: "InputCurrency",
   },
   {
     label: "ROW",

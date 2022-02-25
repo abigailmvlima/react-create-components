@@ -2,8 +2,9 @@ import { memo } from "react";
 
 import * as ST from "./styles";
 
-const Label = () => {
-  return <ST.Container>Teste Label</ST.Container>;
+const CLabel = (props) => {
+  const { label } = props;
+  return <ST.Container>{label}</ST.Container>;
 };
 
-export default memo(Label);
+export default memo(CLabel);
